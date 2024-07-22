@@ -7,8 +7,6 @@ function showImage(){
 	//document.getElementById("imgTxt").style.opacity = 0;
 	myImage.setAttribute("src", imageArray[imageIndex]);
 	myTxt.innerHTML = txtArray[imageIndex];
-	document.getElementById("imgTxt").style.width = 325;
-	document.getElementById("imgTxt").style.maxHeight = 433;
 	//document.getElementById("imgTxt").style.opacity = 1 - flag;
 	imageIndex++;
 	if(imageIndex >= len){
@@ -28,7 +26,7 @@ function play(){
 	document.getElementById("imgTxt").style.opacity = 1 - flag;
 	if(t == 0){
 		//setTimeout(showImage, 1000);
-		setInterval(showImage, 3500);
+		setInterval(showImage, 2500);
 	}
 	t++;
 }
